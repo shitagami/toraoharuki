@@ -105,4 +105,55 @@
 
 .feature-card p {
   color: #666;
+}
+
+.instagram-section {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.instagram-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.instagram-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.instagram-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.instagram-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.instagram-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.instagram-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #dc2743;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.instagram-button:hover {
+  background-color: #dc2743;
+  color: #fff;
 } 

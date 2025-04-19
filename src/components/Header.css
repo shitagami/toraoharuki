@@ -44,4 +44,25 @@
 
 .nav a:hover {
   color: #666;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav li {
+    margin: 0.5rem;
+  }
 } 

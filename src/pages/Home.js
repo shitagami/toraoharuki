@@ -38,6 +38,18 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
+      <section className="instagram-section">
+        <div className="instagram-container">
+          <div className="instagram-header">
+            <h2 className="instagram-title">Instagram</h2>
+          </div>
+          <p className="instagram-description">最新の情報や写真をチェック</p>
+          <a href="https://www.instagram.com/ichifuji__bar/?igsh=dGcycWRreGthZzlt#" target="_blank" rel="noopener noreferrer" className="instagram-button">
+            Instagramでフォロー
+          </a>
+        </div>
+      </section>
     </div>
   );
 };
