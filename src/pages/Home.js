@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home">
       <section className="hero">
         <div className="hero-content">
-          <h1>ようこそ〇〇へ！</h1>
+          <h1>ICHIFUZI</h1>
           <p>最高の料理と空間で、特別なひとときをお過ごしください</p>
           <Link to="/menu" className="cta-button">メニューを見る</Link>
         </div>
