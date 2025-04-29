@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import aboutImage from '../images/ichifuzi/Sora Task 01 Image 0.webp';
+import heroImage from '../images/ichifuzi/asd.webp';
+import pastaImage from '../images/ichifuzi/pasta.webp';
+import saladImage from '../images/ichifuzi/sarada.webp';
+import cakeImage from '../images/ichifuzi/cake.webp';
 
 const Home = () => {
   return (
     <div className="home">
-      <section className="hero">
+      <section className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="hero-content">
           <h1>ICHIFUZI</h1>
           <p>最高の料理と空間で、特別なひとときをお過ごしください</p>
@@ -23,7 +28,7 @@ const Home = () => {
           <h2 className="section-title">お店紹介</h2>
           <div className="about-container">
             <div className="about-image">
-              <img src="/images/restaurant-interior.jpg" alt="店内の様子" />
+              <img src={aboutImage} alt="当店の料理" />
             </div>
             <div className="about-details">
               <h3>ICHIFUZIの魅力</h3>
@@ -62,19 +67,19 @@ const Home = () => {
           <p className="section-subtitle">店内の雰囲気と料理の写真</p>
           <div className="gallery-grid">
             <div className="gallery-item">
-              <img src="/images/dish1.jpg" alt="料理1" />
+              <img src={pastaImage} alt="料理1" />
               <div className="gallery-overlay">
-                <p>特製パスタ</p>
+                <p>ミートソーススパゲッティ</p>
               </div>
             </div>
             <div className="gallery-item">
-              <img src="/images/dish2.jpg" alt="料理2" />
+              <img src={saladImage} alt="サラダ" />
               <div className="gallery-overlay">
-                <p>季節のサラダ</p>
+                <p>アボカドと季節野菜のサラダ</p>
               </div>
             </div>
             <div className="gallery-item">
-              <img src="/images/dish3.jpg" alt="料理3" />
+              <img src={cakeImage} alt="デザート" />
               <div className="gallery-overlay">
                 <p>デザート</p>
               </div>

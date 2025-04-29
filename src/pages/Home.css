@@ -33,18 +33,18 @@
 }
 
 .hero {
-  height: 80vh; /* 90vhから80vhに縮小 */
+  height: 80vh;
   background-color: #ffffff;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #2c1810;
   position: relative;
-  padding: 30px 15px; /* 40px 20pxから30px 15pxに縮小 */
-  background-image: url('../images/ichifuzi/restaurant-bg.jpg');
+  padding: 30px 15px;
   animation: fadeIn 1s ease-out;
 }
 
