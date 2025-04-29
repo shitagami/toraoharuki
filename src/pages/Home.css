@@ -33,7 +33,10 @@
 }
 
 .hero {
-  height: 80vh;
+  height: 75vh;
+  width: 100%;
+  max-width: 1456px;
+  margin: 0 auto;
   background-color: #ffffff;
   background-size: cover;
   background-position: center;
@@ -44,7 +47,7 @@
   text-align: center;
   color: #2c1810;
   position: relative;
-  padding: 30px 15px;
+  padding: 10px 20px;
   animation: fadeIn 1s ease-out;
 }
 
@@ -63,7 +66,7 @@
   position: relative;
   z-index: 1;
   max-width: 800px;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   animation: fadeIn 1.5s ease-out;
 }
 
@@ -182,37 +185,39 @@
 }
 
 .instagram-section {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  padding: 3rem 1rem; /* 4remから3remに縮小 */
+  padding: 1rem 1rem;
   text-align: center;
-  color: #fff;
-  margin: 30px 0; /* 40pxから30pxに縮小 */
+  margin: 20px 0;
+  position: relative;
 }
 
 .instagram-container {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.instagram-header {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  align-items: center;
 }
 
-.instagram-icon {
-  width: 40px;
-  height: 40px;
-  margin-right: 1rem;
+.instagram-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .instagram-title {
-  font-size: 2rem; /* タイトルのフォントサイズを小さく */
+  font-size: 1rem;
+  color: #2c1810;
   margin: 0;
-  font-weight: 700; /* 太字 */
-  font-family: 'Noto Serif JP', serif;
-  letter-spacing: 1px;
+  font-family: 'Shippori Mincho', serif;
+  letter-spacing: 0.1em;
+}
+
+.instagram-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
 
 .instagram-description {
@@ -239,6 +244,16 @@
 .instagram-button:hover {
   background-color: transparent;
   color: #fff;
+}
+
+.instagram-content a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.instagram-content a:hover {
+  transform: scale(1.1);
 }
 
 .about-section,
@@ -462,10 +477,15 @@
 }
 
 .feature-icon {
-  font-size: 2.5rem;
   margin-bottom: 1rem;
   display: block;
   color: #8c4a3c;
+}
+
+.feature-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .feature-item h4 {
@@ -484,6 +504,21 @@
   color: #5c4030;
   font-family: 'Shippori Mincho', serif;
   line-height: 1.6;
+}
+
+.instagram-section .section-title::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background-color: #2c3e50;
+}
+
+.instagram-section .section-title::after {
+  display: none;
 }
 
 @media (max-width: 768px) {

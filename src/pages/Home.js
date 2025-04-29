@@ -6,6 +6,8 @@ import heroImage from '../images/ichifuzi/asd.webp';
 import pastaImage from '../images/ichifuzi/pasta.webp';
 import saladImage from '../images/ichifuzi/sarada.webp';
 import cakeImage from '../images/ichifuzi/cake.webp';
+import wineIcon from '../images/ichifuzi/Group 2.png';
+import instagramIcon from '../images/ichifuzi/Group.png';
 
 const Home = () => {
   return (
@@ -41,7 +43,9 @@ const Home = () => {
                   <p>最高品質の食材を使用</p>
                 </div>
                 <div className="feature-item">
-                  <span className="feature-icon">🍷</span>
+                  <span className="feature-icon">
+                    <img src={wineIcon} alt="ワインアイコン" />
+                  </span>
                   <h4>豊富なワイン</h4>
                   <p>厳選されたワインセレクション</p>
                 </div>
@@ -117,13 +121,14 @@ const Home = () => {
 
       <section className="instagram-section">
         <div className="instagram-container">
-          <div className="instagram-header">
-            <h2 className="instagram-title">Instagram</h2>
+          <div className="instagram-content">
+            <h2 className="section-title">Instagram</h2>
+            <a href="https://www.instagram.com/ichifuji__bar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              <img src={instagramIcon} alt="Instagramアイコン" className="instagram-icon" />
+            </a>
           </div>
-          <p className="instagram-description">最新の情報や写真をチェック</p>
-          <a href="https://www.instagram.com/ichifuji__bar/?igsh=dGcycWRreGthZzlt#" target="_blank" rel="noopener noreferrer" className="instagram-button">
-            Instagramでフォロー
-          </a>
         </div>
       </section>
     </div>
