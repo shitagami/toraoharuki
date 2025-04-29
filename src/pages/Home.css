@@ -1,5 +1,5 @@
 /* Google Fontsのインポートを追加 */
-@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Kaisei+Tokumin:wght@400;700&family=Sawarabi+Mincho&family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap');
 
 /* フェードイン・フェードアウトのアニメーション定義 */
 @keyframes fadeIn {
@@ -25,26 +25,26 @@
 }
 
 .home {
-  margin-top: 80px; /* ヘッダーの高さ分 */
-  background-color: #f0f8ff; /* 明るい青の背景 */
-  color: #2c3e50; /* 濃い青のテキストカラー */
-  font-family: 'Yomogi', cursive; /* 手書き風フォントに変更 */
-  padding: 20px; /* パディングを追加 */
+  margin-top: 60px; /* 80pxから60pxに縮小 */
+  background-color: #ffffff;
+  color: #2c1810; /* より和風な深い茶色のテキストカラー */
+  font-family: 'Shippori Mincho', 'Noto Serif JP', serif;
+  padding: 15px; /* 20pxから15pxに縮小 */
 }
 
 .hero {
-  height: 100vh;
-  background-color: #e6f7ff; /* 明るい青の背景 */
+  height: 80vh; /* 90vhから80vhに縮小 */
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #2c3e50; /* 濃い青のテキストカラー */
+  color: #2c1810;
   position: relative;
-  padding: 40px 20px; /* スペーシングのためのパディング */
-  background-image: url('../images/ichifuzi/restaurant-bg.jpg'); /* srcからの相対パス */
+  padding: 30px 15px; /* 40px 20pxから30px 15pxに縮小 */
+  background-image: url('../images/ichifuzi/restaurant-bg.jpg');
   animation: fadeIn 1s ease-out;
 }
 
@@ -55,7 +55,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.5); /* 透明度を0.5に調整 */
+  background: rgba(255, 255, 255, 0.7);
   z-index: 1;
 }
 
@@ -68,39 +68,41 @@
 }
 
 .hero h1 {
-  font-size: 3.5rem; /* フォントサイズを大きく */
+  font-size: 3.8rem;
   margin-bottom: 1.5rem;
-  font-weight: 700; /* 太字 */
-  color: #3498db; /* 明るい青のテキストカラー */
-  font-family: 'RocknRoll One', sans-serif; /* ディスプレイ風フォント */
-  letter-spacing: 2px; /* 文字間隔を広げる */
-  text-transform: uppercase; /* 大文字に変換 */
+  font-weight: 600;
+  color: #2c1810;
+  font-family: 'Shippori Mincho', serif;
+  letter-spacing: 0.2em;
+  text-transform: none; /* 大文字変換を解除 */
 }
 
 .hero p {
-  font-size: 1.5rem; /* フォントサイズを大きく */
+  font-size: 1.3rem;
   margin-bottom: 2rem;
-  line-height: 1.5; /* 行間を広げる */
-  font-family: 'Yomogi', cursive; /* 手書き風フォント */
+  line-height: 2;
+  font-family: 'Shippori Mincho', serif;
+  letter-spacing: 0.1em;
 }
 
 .cta-button {
   display: inline-block;
-  padding: 10px 20px; /* ボタンのパディング */
-  background-color: #3498db; /* 明るい青のボタン */
-  color: white; /* ボタンのテキストは白 */
-  text-decoration: none; /* 下線を削除 */
-  border-radius: 25px; /* 角を丸くする */
-  font-weight: bold;
+  padding: 15px 40px;
+  background-color: #8c4a3c; /* 和風の赤茶色 */
+  color: #faf7f2;
+  text-decoration: none;
+  border-radius: 0; /* 角を直角に */
+  font-weight: 500;
   transition: all 0.3s;
-  font-size: 1.2rem; /* ボタンのフォントサイズを調整 */
-  font-family: 'RocknRoll One', sans-serif; /* ディスプレイ風フォント */
-  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-family: 'Shippori Mincho', serif;
+  letter-spacing: 0.2em;
+  border: 1px solid #8c4a3c;
 }
 
 .cta-button:hover {
-  background-color: #2980b9; /* ホバー時の色 */
-  color: #fff;
+  background-color: transparent;
+  color: #8c4a3c;
 }
 
 .scroll-indicator {
@@ -124,14 +126,17 @@
 }
 
 .feature-card {
-  background-color: #ffffff; /* カードの背景は白 */
-  border: 1px solid #bdc3c7; /* 明るいボーダー */
-  border-radius: 10px; /* 角を丸くする */
-  padding: 20px; /* カードのパディング */
-  text-align: center; /* テキストを中央揃え */
-  width: 30%; /* カードの幅を設定 */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  width: 30%;
   animation: fadeIn 1s ease-out;
   animation-fill-mode: both;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
 
 .feature-card:nth-child(1) {
@@ -148,6 +153,7 @@
 
 .feature-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .feature-card a {
@@ -157,28 +163,34 @@
 
 .feature-card h2 {
   margin-bottom: 1rem;
-  font-size: 1.8rem; /* フィーチャーカードのタイトルサイズを調整 */
-  font-weight: 700; /* 太字 */
-  font-family: 'RocknRoll One', sans-serif; /* ディスプレイ風フォント */
-  letter-spacing: 1px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: 'Shippori Mincho', serif;
+  letter-spacing: 0.1em;
+  color: #2c1810;
+  border-bottom: 2px solid #8c4a3c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .feature-card p {
-  color: #7f8c8d; /* グレーのテキストカラー */
-  font-family: 'Yomogi', cursive; /* 手書き風フォント */
+  color: #5c4030;
+  font-family: 'Shippori Mincho', serif;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 
 .instagram-section {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); /* 以前のインスタグラムのグラデーション */
-  padding: 2rem 1rem; /* パディングを減らす */
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  padding: 3rem 1rem; /* 4remから3remに縮小 */
   text-align: center;
   color: #fff;
-  margin: 20px 0; /* スペーシングのためのマージン */
-  animation: fadeIn 1s ease-out;
+  margin: 30px 0; /* 40pxから30pxに縮小 */
 }
 
 .instagram-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -199,31 +211,327 @@
   font-size: 2rem; /* タイトルのフォントサイズを小さく */
   margin: 0;
   font-weight: 700; /* 太字 */
-  font-family: 'RocknRoll One', sans-serif; /* ディスプレイ風フォント */
+  font-family: 'Noto Serif JP', serif;
   letter-spacing: 1px;
 }
 
 .instagram-description {
   font-size: 1.2rem; /* 説明文のフォントサイズを小さく */
-  margin-bottom: 1rem; /* マージンを減らす */
+  margin-bottom: 1.5rem; /* マージンを減らす */
   line-height: 1.5; /* 行間を広げる */
-  font-family: 'Yomogi', cursive; /* 手書き風フォント */
+  font-family: 'Noto Serif JP', serif;
 }
 
 .instagram-button {
   display: inline-block;
-  padding: 8px 16px; /* ボタンのパディングを減らす */
-  background-color: #ffccbc; /* 以前の明るいオレンジのボタン */
-  color: #d84315; /* 以前の濃いオレンジのテキストカラー */
-  text-decoration: none; /* 下線を削除 */
-  border-radius: 25px; /* 角を丸くする */
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #dc2743;
+  text-decoration: none;
+  border-radius: 4px;
   font-weight: bold;
   transition: all 0.3s;
-  font-family: 'RocknRoll One', sans-serif; /* ディスプレイ風フォント */
+  font-family: 'Noto Serif JP', serif;
   letter-spacing: 1px;
+  border: 1px solid #fff;
 }
 
 .instagram-button:hover {
-  background-color: #dc2743; /* ホバー時の色 */
+  background-color: transparent;
   color: #fff;
+}
+
+.about-section,
+.gallery-section,
+.access-section {
+  padding: 50px 15px; /* 80px 20pxから50px 15pxに縮小 */
+  min-height: 80vh; /* 100vhから80vhに縮小 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-section {
+  background-color: #ffffff;
+}
+
+.gallery-section {
+  background-color: #ffffff;
+}
+
+.access-section {
+  background-color: #ffffff;
+}
+
+.about-details,
+.access-details {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 300pxから250pxに縮小 */
+  gap: 15px; /* 20pxから15pxに縮小 */
+  margin-top: 30px; /* 40pxから30pxに縮小 */
+  padding: 0 15px; /* 20pxから15pxに縮小 */
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+  margin: 10px;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 20px;
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.access-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px; /* 40pxから30pxに縮小 */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px; /* 20pxから15pxに縮小 */
+}
+
+.access-map {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.access-details {
+  text-align: left;
+}
+
+.access-details h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.access-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.access-details li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #34495e;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background-color: #2c3e50;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.about-container {
+  display: flex;
+  gap: 30px; /* 40pxから30pxに縮小 */
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px; /* 20pxから15pxに縮小 */
+}
+
+.about-image {
+  flex: 0.8;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+.about-details {
+  flex: 1;
+  text-align: left;
+}
+
+.about-details h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  margin: 10px;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: #8c4a3c;
+}
+
+.feature-item h4 {
+  font-size: 1.3rem;
+  color: #2c1810;
+  margin-bottom: 0.8rem;
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 600;
+  border-bottom: 2px solid #8c4a3c;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #5c4030;
+  font-family: 'Shippori Mincho', serif;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-container,
+  .access-container {
+    grid-template-columns: 1fr;
+    gap: 15px; /* 20pxから15pxに縮小 */
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    flex: 1;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .feature-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+  
+  .feature-item {
+    margin: 10px auto;
+  }
+  
+  .gallery-item {
+    margin: 10px auto;
+  }
+  
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
 } 
