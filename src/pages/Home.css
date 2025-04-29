@@ -1,6 +1,29 @@
 /* Google Fontsのインポートを追加 */
 @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Kaisei+Tokumin:wght@400;700&family=Sawarabi+Mincho&family=Yomogi&display=swap');
 
+/* フェードイン・フェードアウトのアニメーション定義 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
 .home {
   margin-top: 80px; /* ヘッダーの高さ分 */
   background-color: #f0f8ff; /* 明るい青の背景 */
@@ -22,6 +45,7 @@
   position: relative;
   padding: 40px 20px; /* スペーシングのためのパディング */
   background-image: url('../images/ichifuzi/restaurant-bg.jpg'); /* srcからの相対パス */
+  animation: fadeIn 1s ease-out;
 }
 
 .hero::before {
@@ -40,6 +64,7 @@
   z-index: 1;
   max-width: 800px;
   padding: 0 2rem;
+  animation: fadeIn 1.5s ease-out;
 }
 
 .hero h1 {
@@ -105,6 +130,20 @@
   padding: 20px; /* カードのパディング */
   text-align: center; /* テキストを中央揃え */
   width: 30%; /* カードの幅を設定 */
+  animation: fadeIn 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.feature-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.feature-card:nth-child(3) {
+  animation-delay: 0.6s;
 }
 
 .feature-card:hover {
@@ -134,7 +173,8 @@
   padding: 2rem 1rem; /* パディングを減らす */
   text-align: center;
   color: #fff;
-  margin: 10px 0; /* マージンを減らす */
+  margin: 20px 0; /* スペーシングのためのマージン */
+  animation: fadeIn 1s ease-out;
 }
 
 .instagram-container {
