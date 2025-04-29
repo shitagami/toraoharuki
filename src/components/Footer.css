@@ -1,7 +1,8 @@
 .footer {
-  background-color: #333;
-  color: #fff;
+  background: linear-gradient(135deg, #e6f7ff 0%, #f0f8ff 100%);
+  color: #2c3e50;
   padding: 3rem 0 1rem;
+  font-family: 'Yomogi', cursive;
 }
 
 .footer-container {
@@ -20,21 +21,23 @@
 .footer-section h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #3498db;
+  font-family: 'RocknRoll One', sans-serif;
+  letter-spacing: 1px;
 }
 
 .footer-section p {
   margin: 0.5rem 0;
-  color: #ccc;
+  color: #2c3e50;
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid #444;
+  border-top: 1px solid #bdc3c7;
 }
 
 .footer-bottom p {
-  color: #ccc;
+  color: #2c3e50;
   font-size: 0.9rem;
 }

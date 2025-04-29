@@ -1,26 +1,27 @@
 /* Google Fontsのインポートを追加 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Kaisei+Tokumin:wght@400;700&family=Sawarabi+Mincho&family=Yomogi&display=swap');
 
 .home {
   margin-top: 80px; /* ヘッダーの高さ分 */
-  background-color: #e0f7fa; /* 明るい青の背景 */
-  color: #004d40; /* 濃いティールのテキストカラー */
-  font-family: 'Roboto', sans-serif; /* フォントをRobotoに変更 */
+  background-color: #f0f8ff; /* 明るい青の背景 */
+  color: #2c3e50; /* 濃い青のテキストカラー */
+  font-family: 'Yomogi', cursive; /* 手書き風フォントに変更 */
   padding: 20px; /* パディングを追加 */
 }
 
 .hero {
   height: 100vh;
-  background-color: #333; /* 画像がない場合の代替背景色 */
+  background-color: #e6f7ff; /* 明るい青の背景 */
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color: #2c3e50; /* 濃い青のテキストカラー */
   position: relative;
   padding: 40px 20px; /* スペーシングのためのパディング */
+  background-image: url('../images/ichifuzi/restaurant-bg.jpg'); /* srcからの相対パス */
 }
 
 .hero::before {
@@ -30,7 +31,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #fcffff;
+  background: rgba(255, 255, 255, 0.5); /* 透明度を0.5に調整 */
+  z-index: 1;
 }
 
 .hero-content {
@@ -44,29 +46,35 @@
   font-size: 3.5rem; /* フォントサイズを大きく */
   margin-bottom: 1.5rem;
   font-weight: 700; /* 太字 */
-  color: #a6e9f2 !important; /* 水色に変更 */
+  color: #3498db; /* 明るい青のテキストカラー */
+  font-family: 'RocknRoll One', sans-serif; /* ディスプレイ風フォント */
+  letter-spacing: 2px; /* 文字間隔を広げる */
+  text-transform: uppercase; /* 大文字に変換 */
 }
 
 .hero p {
   font-size: 1.5rem; /* フォントサイズを大きく */
   margin-bottom: 2rem;
   line-height: 1.5; /* 行間を広げる */
+  font-family: 'Yomogi', cursive; /* 手書き風フォント */
 }
 
 .cta-button {
   display: inline-block;
   padding: 10px 20px; /* ボタンのパディング */
-  background-color: #4db6ac; /* 明るいティールのボタン */
+  background-color: #3498db; /* 明るい青のボタン */
   color: white; /* ボタンのテキストは白 */
   text-decoration: none; /* 下線を削除 */
   border-radius: 25px; /* 角を丸くする */
   font-weight: bold;
   transition: all 0.3s;
   font-size: 1.2rem; /* ボタンのフォントサイズを調整 */
+  font-family: 'RocknRoll One', sans-serif; /* ディスプレイ風フォント */
+  letter-spacing: 1px;
 }
 
 .cta-button:hover {
-  background-color: #333;
+  background-color: #2980b9; /* ホバー時の色 */
   color: #fff;
 }
 
@@ -92,7 +100,7 @@
 
 .feature-card {
   background-color: #ffffff; /* カードの背景は白 */
-  border: 1px solid #b2dfdb; /* 明るいボーダー */
+  border: 1px solid #bdc3c7; /* 明るいボーダー */
   border-radius: 10px; /* 角を丸くする */
   padding: 20px; /* カードのパディング */
   text-align: center; /* テキストを中央揃え */
@@ -105,25 +113,28 @@
 
 .feature-card a {
   text-decoration: none;
-  color: #333;
+  color: #2c3e50; /* 濃い青のテキストカラー */
 }
 
 .feature-card h2 {
   margin-bottom: 1rem;
   font-size: 1.8rem; /* フィーチャーカードのタイトルサイズを調整 */
   font-weight: 700; /* 太字 */
+  font-family: 'RocknRoll One', sans-serif; /* ディスプレイ風フォント */
+  letter-spacing: 1px;
 }
 
 .feature-card p {
-  color: #666;
+  color: #7f8c8d; /* グレーのテキストカラー */
+  font-family: 'Yomogi', cursive; /* 手書き風フォント */
 }
 
 .instagram-section {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  padding: 4rem 2rem;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); /* 以前のインスタグラムのグラデーション */
+  padding: 2rem 1rem; /* パディングを減らす */
   text-align: center;
   color: #fff;
-  margin: 20px 0; /* スペーシングのためのマージン */
+  margin: 10px 0; /* マージンを減らす */
 }
 
 .instagram-container {
@@ -145,29 +156,34 @@
 }
 
 .instagram-title {
-  font-size: 2.5rem; /* Instagramセクションのタイトルサイズを調整 */
+  font-size: 2rem; /* タイトルのフォントサイズを小さく */
   margin: 0;
   font-weight: 700; /* 太字 */
+  font-family: 'RocknRoll One', sans-serif; /* ディスプレイ風フォント */
+  letter-spacing: 1px;
 }
 
 .instagram-description {
-  font-size: 1.4rem; /* 説明文のフォントサイズを調整 */
-  margin-bottom: 2rem;
+  font-size: 1.2rem; /* 説明文のフォントサイズを小さく */
+  margin-bottom: 1rem; /* マージンを減らす */
   line-height: 1.5; /* 行間を広げる */
+  font-family: 'Yomogi', cursive; /* 手書き風フォント */
 }
 
 .instagram-button {
   display: inline-block;
-  padding: 10px 20px; /* ボタンのパディング */
-  background-color: #ffccbc; /* 明るいオレンジのボタン */
-  color: #d84315; /* 濃いオレンジのテキスト */
+  padding: 8px 16px; /* ボタンのパディングを減らす */
+  background-color: #ffccbc; /* 以前の明るいオレンジのボタン */
+  color: #d84315; /* 以前の濃いオレンジのテキストカラー */
   text-decoration: none; /* 下線を削除 */
   border-radius: 25px; /* 角を丸くする */
   font-weight: bold;
   transition: all 0.3s;
+  font-family: 'RocknRoll One', sans-serif; /* ディスプレイ風フォント */
+  letter-spacing: 1px;
 }
 
 .instagram-button:hover {
-  background-color: #dc2743;
+  background-color: #dc2743; /* ホバー時の色 */
   color: #fff;
 } 
