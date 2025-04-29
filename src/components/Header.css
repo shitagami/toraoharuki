@@ -1,5 +1,5 @@
 .header {
-  background-color: #fff;
+  background-color: #f0f8ff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -18,10 +18,12 @@
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #2c3e50;
+  font-family: 'RocknRoll One', sans-serif;
+  letter-spacing: 1px;
 }
 
 .nav ul {
@@ -37,13 +39,14 @@
 
 .nav a {
   text-decoration: none;
-  color: #333;
+  color: #2c3e50;
   font-weight: 500;
   transition: color 0.3s;
+  font-family: 'Yomogi', cursive;
 }
 
 .nav a:hover {
-  color: #666;
+  color: #3498db;
 }
 
 @media (max-width: 768px) {
